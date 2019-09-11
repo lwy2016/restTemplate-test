@@ -32,7 +32,7 @@ public class postForObject {
         map.put("body", "孤帆远影碧空尽");
 // 新增一个issue,使用map
         // 我的token,就可以post新增或修改了
-        String url1 = "https://api.github.com/repos/lwy2016/Test1/issues?access_token=18eedf289c5a7f8d07f3288ee9b18b4bbcee3168";
+        String url1 = "https://api.github.com/repos/lwy2016/Test1/issues?access_token=051a9ef9f38ea1fc84c165e170d2b77a48a4ac27";
         String result1 = restTemplate.postForObject(url1, map, String.class);
         System.out.println(result1);
 
@@ -47,7 +47,7 @@ public class postForObject {
         Map<String, String> map2 = new HashMap<>();
         map2.put("body", "唯见长江天际流");
 
-        String url2 = "https://api.github.com/repos/lwy2016/Test1/issues/2/comments?access_token=18eedf289c5a7f8d07f3288ee9b18b4bbcee3168";
+        String url2 = "https://api.github.com/repos/lwy2016/Test1/issues/2/comments?access_token=051a9ef9f38ea1fc84c165e170d2b77a48a4ac27";
         String result2 = restTemplate.postForObject(url2, map2, String.class);
         System.out.println(result2);
     }

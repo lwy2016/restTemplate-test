@@ -7,7 +7,7 @@ RestTemplate
 |.|getForEntity|
 |HEAD|headForHeaders|
 |OPTIONS|optionsForAllow|
-|POST|postForLocation|
+|POST|postForEntity|
 |.|postForObject|
 |PUT|put|
 |any|exchange|

@@ -15,7 +15,7 @@ import java.util.Map;
 public class postForEntity {
     public static void main(String[] args) {
         postForEntity postForEntity = new postForEntity();
-
+        postForEntity.post1();
     }
 
     public void post1() {
@@ -25,7 +25,7 @@ public class postForEntity {
         issue.setBody("bbbbooodyyyy3333");
 // 新增一个issue,使用map
         // 我的token,就可以post新增或修改了
-        String url1 = "https://api.github.com/repos/lwy2016/Test1/issues?access_token=18eedf289c5a7f8d07f3288ee9b18b4bbcee3168";
+        String url1 = "https://api.github.com/repos/lwy2016/Test1/issues?access_token=051a9ef9f38ea1fc84c165e170d2b77a48a4ac27";
         ResponseEntity<Issue> responseEntity = restTemplate.postForEntity(url1, issue, Issue.class);
         System.out.println(responseEntity);
         System.out.println(responseEntity.getBody());
